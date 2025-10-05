@@ -7,18 +7,50 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 		<title>Tic Tac Toe</title>
 	</head>
 	<body>
 		<header>
-			<h1>Welcome to a game of Tic-Tac-Toe!</h1>
-			<p>(head to the console to play!)</p>
+			<h1>Welcome to Tic-Tac-Toe!</h1>
+			<p class="turn"></p>
 		</header>
 		<main>
-			<div></div>
-			<div></div>
-			<div></div>
+			<div class="left-card">
+				<div class="card-content">
+					<img src="https://placehold.co/60x60" alt="Avatar of player n°1" />
+					<div class="card-content-player">
+						<h4>Name: Player One</h4>
+						<p>Rank: <strong>1114</strong></p>
+					</div>
+					<div class="card-footer">
+						<p>Number of victories: 0</p>
+					</div>
+				</div>
+			</div>
+			<div class="game-grid">
+				<!-- 				<div class="grid-cell">1</div>
+				<div class="grid-cell">2</div>
+				<div class="grid-cell">3</div>
+				<div class="grid-cell">4</div>
+				<div class="grid-cell">5</div>
+				<div class="grid-cell">6</div>
+				<div class="grid-cell">7</div>
+				<div class="grid-cell">8</div>
+				<div class="grid-cell">9</div> -->
+			</div>
+			<div class="right-card">
+				<div class="card-content">
+					<img src="https://placehold.co/60x60" alt="Avatar of player n°2" />
+					<div class="right-card-content-player">
+						<h4>Name: Player Two</h4>
+						<p>Rank: <strong>1204</strong></p>
+					</div>
+					<div class="card-footer">
+						<p>Number of victories: 0</p>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<h3>This game was provided to you by Akrame-Amine DRIDI.</h3>
